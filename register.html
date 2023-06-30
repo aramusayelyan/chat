@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration</title>
+  <style>
+    /* Styles for the registration page */
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 400px;
+      margin: 50px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+   
+    input[type="text"],
+    input[type="password"] {
+      width: 80%;
+      padding: 10px;
+     
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      padding: 10px;
+      
+      border-radius: 5px;
+      background-color: #4285f4;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      width: 80%;
+    }
+
+    .link {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Registration</h1>
+    <form action="register.php" method="POST">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="submit" value="Register">
+    </form>
+    <p class="link">Already have an account? <a href="login.html">Login here</a></p>
+  </div>
+</body>
+</html>
